@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maquette – Chiropraxie Mulhouse | Midnight Studio</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Maquette de site proposée par Midnight Studio au cabinet Chiropraxie Mulhouse.">
+<meta name="theme-color" content="#2C5F59">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:#F5F6F3;font-family:Inter,system-ui,sans-serif;color:#1B2B29}
+a{color:#2C5F59}a:hover{color:#1E4540}
+.cards{display:grid;gap:18px;grid-template-columns:repeat(var(--cols,3),minmax(0,1fr))}
+.nav-links{display:flex}
+.brand-name{white-space:nowrap}
+.swipe-hint,.burger,.mbar{display:none}
+@media (min-width:981px){.mnav{display:none !important}}
+@media (max-width:980px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.nav-links{display:none !important}.burger{display:flex !important;flex:none}}
+@media (max-width:640px){.brand-sub{display:none}}
+@media (max-width:640px){
+.cards.stack{grid-template-columns:minmax(0,1fr)}
+.cards.carousel{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -16px;padding:4px 16px 12px;scroll-padding:0 16px;scrollbar-width:none}
+.cards.carousel::-webkit-scrollbar{display:none}
+.cards.carousel>*{flex:0 0 78%;scroll-snap-align:start}
+.swipe-hint{display:flex}
+.mbar{display:grid}
+.hero-cta>a{flex:1 1 100%;justify-content:center;text-align:center}
+}
+
+.opt-type{font:inherit;width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 16px;border-radius:14px;cursor:pointer;background:#fff;border:2px solid #E3E7E2}
+.opt-type.on{background:#E3EEEA;border-color:#2C5F59}
+.opt-pro{font:inherit;font-size:15px;font-weight:600;padding:12px 4px;border-radius:12px;cursor:pointer;background:#fff;color:#1B2B29;border:2px solid #E3E7E2}
+.opt-pro.on{background:#2C5F59;color:#fff;border-color:#2C5F59}
+.burger .ic-close{display:none}.burger[aria-expanded="true"] .ic-close{display:block}.burger[aria-expanded="true"] .ic-open{display:none}
+.mnav[hidden]{display:none !important}
+html{scroll-behavior:smooth}section[id],div[id]{scroll-margin-top:80px}
+</style>
+</head>
+<body>
+<div role="note" style="background:#1B2B29;color:#E6ECE9;font-family:Inter,system-ui,sans-serif;font-size:13px;text-align:center;padding:8px 16px">Maquette non officielle, proposée par Midnight Studio · Contenus provisoires</div>
+<div style="width: 100%; background: #F5F6F3; font-family: Inter, system-ui, sans-serif; color: #1B2B29">
+
+<header style="background: #FFFFFF; border-bottom: 1px solid #E3E7E2; position: sticky; top: 0; z-index: 5">
+<div style="max-width: 1200px; margin: 0 auto; padding: 14px clamp(16px, 4vw, 32px); display: flex; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #1B2B29">
+<span style="flex: none; width: 40px; height: 40px; border-radius: 12px; background: #2C5F59; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 3v18M8 6h8M7 10h10M8 14h8M9 18h6"></path></svg></span>
+<span style="display: flex; flex-direction: column; min-width: 0"><span class="brand-name" style="font-family: Manrope, sans-serif; font-weight: 800; font-size: 17px">Chiropraxie Mulhouse</span><span class="brand-sub" style="font-size: 13px; color: #55645F">Cabinet Lauzzana &amp; Chesnais</span></span>
+</a>
+<nav class="nav-links" aria-label="Navigation principale" style="align-items: center; gap: 26px; font-size: 15px; font-weight: 500">
+<a href="#soins" style="text-decoration: none; color: #1B2B29">Soins</a>
+<a href="#seance" style="text-decoration: none; color: #1B2B29">Votre séance</a>
+<a href="#exercices" style="text-decoration: none; color: #1B2B29">Exercices</a>
+<a href="#equipe" style="text-decoration: none; color: #1B2B29">L'équipe</a>
+<a href="#infos" style="text-decoration: none; color: #1B2B29">Tarifs &amp; accès</a>
+<a href="#rdv" style="text-decoration: none; background: #2C5F59; color: #FFFFFF; padding: 12px 22px; border-radius: 999px; font-weight: 600">Prendre rendez-vous</a>
+</nav>
+<button type="button" class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mnav" style="width:44px;height:44px;border:none;border-radius:12px;background:#F0F3F1;align-items:center;justify-content:center;cursor:pointer"><svg class="ic-open" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1B2B29" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg><svg class="ic-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1B2B29" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+</div>
+<nav class="mnav" id="mnav" hidden aria-label="Menu mobile" style="border-top: 1px solid #E3E7E2; background: #FFFFFF; padding: 6px clamp(16px, 4vw, 32px) 18px; display: flex; flex-direction: column; box-shadow: 0 16px 30px rgba(27,43,41,0.10)">
+<a href="#soins" style="text-decoration: none; color: #1B2B29; font-size: 17px; font-weight: 600; padding: 15px 4px; border-bottom: 1px solid #EEF1EF">Soins</a>
+<a href="#seance" style="text-decoration: none; color: #1B2B29; font-size: 17px; font-weight: 600; padding: 15px 4px; border-bottom: 1px solid #EEF1EF">Votre séance</a>
+<a href="#exercices" style="text-decoration: none; color: #1B2B29; font-size: 17px; font-weight: 600; padding: 15px 4px; border-bottom: 1px solid #EEF1EF">Exercices</a>
+<a href="#equipe" style="text-decoration: none; color: #1B2B29; font-size: 17px; font-weight: 600; padding: 15px 4px; border-bottom: 1px solid #EEF1EF">L'équipe</a>
+<a href="#infos" style="text-decoration: none; color: #1B2B29; font-size: 17px; font-weight: 600; padding: 15px 4px; border-bottom: 1px solid #EEF1EF">Tarifs &amp; accès</a>
+<a href="#" style="text-decoration: none; color: #1B2B29; font-size: 17px; font-weight: 600; padding: 15px 4px; border-bottom: 1px solid #EEF1EF">Blog</a>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; padding-top: 16px">
+<a href="tel:+33389322700" style="text-decoration: none; text-align: center; padding: 14px; border-radius: 12px; border: 1.5px solid #C9D3CF; color: #1B2B29; font-weight: 600">Appeler</a>
+<a href="#rdv" style="text-decoration: none; text-align: center; padding: 14px; border-radius: 12px; background: #2C5F59; color: #FFFFFF; font-weight: 600">Rendez-vous</a>
+</div>
+</nav>
+</header>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: clamp(32px, 6vw, 72px) clamp(16px, 4vw, 32px) clamp(32px, 5vw, 56px); display: flex; flex-wrap: wrap; gap: clamp(28px, 4vw, 48px); align-items: center">
+<div style="flex: 1 1 500px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+<span style="align-self: flex-start; background: #E3EEEA; color: #24504B; padding: 8px 14px; border-radius: 999px; font-size: 14px; font-weight: 600">Chiropracteurs diplômées · Mulhouse</span>
+<h1 style="margin: 0; font-family: Manrope, sans-serif; font-weight: 800; font-size: clamp(34px, 5.5vw, 54px); line-height: 1.08; letter-spacing: -0.02em">Soulager vos douleurs, retrouver votre mobilité.</h1>
+<p style="margin: 0; font-size: clamp(16px, 2vw, 19px); line-height: 1.6; color: #43524E; max-width: 560px">Des ajustements doux et un suivi personnalisé pour le dos, la nuque, les articulations, à tout âge : bébés, enfants, adultes, femmes enceintes, sportifs et seniors.</p>
+<div class="hero-cta" style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center">
+<a href="#rdv" style="text-decoration: none; display: flex; background: #2C5F59; color: #FFFFFF; padding: 16px 28px; border-radius: 999px; font-weight: 600; font-size: 17px">Prendre rendez-vous en ligne</a>
+<a href="tel:+33389322700" style="text-decoration: none; display: flex; align-items: center; gap: 10px; padding: 15px 24px; border-radius: 999px; border: 1.5px solid #C9D3CF; color: #1B2B29; font-weight: 600; font-size: 17px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"></path></svg>03 89 32 27 00</a>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px 24px; font-size: 15px; color: #43524E">
+<span style="display: flex; align-items: center; gap: 8px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2C5F59" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>1 bd du Président Roosevelt</span>
+<span style="display: flex; align-items: center; gap: 8px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2C5F59" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="5" y="3" width="14" height="14" rx="3"></rect><path d="M8 21l2-4M16 21l-2-4M9 11h.01M15 11h.01"></path></svg>Tram 2 &amp; 3 · Porte Haute</span>
+<span style="display: flex; align-items: center; gap: 8px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2C5F59" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="4" r="2"></circle><path d="M12 7v6h5l2 6M12 13a5 5 0 1 0 4 8"></path></svg>Accès PMR</span>
+</div>
+</div>
+
+<div id="rdv" style="flex: 1 1 380px; min-width: 0; background: #FFFFFF; border-radius: 24px; padding: clamp(20px, 4vw, 32px); box-shadow: 0 12px 40px rgba(27,43,41,0.08); display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h2 style="margin: 0; font-family: Manrope, sans-serif; font-size: 24px; font-weight: 800">Prendre rendez-vous</h2>
+<p style="margin: 0; font-size: 15px; color: #55645F">En 3 étapes, 24h/24.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 13px; font-weight: 600; color: #55645F; text-transform: uppercase; letter-spacing: 0.06em">1 · Type de séance</span>
+<button type="button" class="opt-type on" aria-pressed="true"><span style="display:flex;flex-direction:column;gap:2px;text-align:left"><span style="font-weight:600;font-size:16px;color:#1B2B29">Première consultation</span><span style="font-size:14px;color:#55645F">Bilan complet · 1h</span></span><span style="font-weight:700;font-size:16px;color:#1B2B29">60 €</span></button>
+<button type="button" class="opt-type" aria-pressed="false"><span style="display:flex;flex-direction:column;gap:2px;text-align:left"><span style="font-weight:600;font-size:16px;color:#1B2B29">Séance de suivi</span><span style="font-size:14px;color:#55645F">20 min</span></span><span style="font-weight:700;font-size:16px;color:#1B2B29">60 €</span></button>
+<button type="button" class="opt-type" aria-pressed="false"><span style="display:flex;flex-direction:column;gap:2px;text-align:left"><span style="font-weight:600;font-size:16px;color:#1B2B29">Enfant / bébé</span><span style="font-size:14px;color:#55645F">Séance adaptée</span></span><span style="font-weight:700;font-size:16px;color:#1B2B29">45 €</span></button>
+
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 13px; font-weight: 600; color: #55645F; text-transform: uppercase; letter-spacing: 0.06em">2 · Praticienne</span>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+<button type="button" class="opt-pro on" aria-pressed="true">Peu importe</button>
+<button type="button" class="opt-pro" aria-pressed="false">Sophie</button>
+<button type="button" class="opt-pro" aria-pressed="false">Audrey</button>
+
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 13px; font-weight: 600; color: #55645F; text-transform: uppercase; letter-spacing: 0.06em">3 · Créneau</span>
+<a href="#" style="text-decoration: none; text-align: center; background: #2C5F59; color: #FFFFFF; padding: 16px; border-radius: 14px; font-weight: 600; font-size: 16px">Voir les disponibilités</a>
+</div>
+<p style="margin: 0; font-size: 13px; color: #55645F; text-align: center">Vous préférez appeler ? Lun–ven 8h–20h, sam 9h–12h.</p>
+</div>
+</section>
+
+<section id="soins" style="background: #FFFFFF; overflow: hidden">
+<div style="max-width: 1200px; margin: 0 auto; padding: clamp(48px, 7vw, 80px) clamp(16px, 4vw, 32px); display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 680px">
+<h2 style="margin: 0; font-family: Manrope, sans-serif; font-size: clamp(26px, 4vw, 38px); font-weight: 800; letter-spacing: -0.01em">Ce que la chiropraxie peut soulager</h2>
+<p style="margin: 0; font-size: clamp(16px, 2vw, 18px); line-height: 1.6; color: #43524E">Une approche manuelle et douce, qui agit aussi en prévention des troubles articulaires et posturaux.</p>
+</div>
+<div class="cards carousel" style="--cols: 3">
+<div style="background: #F5F6F3; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 14px"><span style="width: 64px; height: 64px; border-radius: 18px; background: #E3EEEA; display: flex; align-items: center; justify-content: center"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#2C5F59" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="4" rx="1.5"></rect><rect x="9" y="8" width="6" height="4" rx="1.5"></rect><rect x="9" y="14" width="6" height="4" rx="1.5"></rect><path d="M12 19.5V22"></path><path d="M5.5 15l-2 1.5M18.5 15l2 1.5M5 12h-2M19 12h2" stroke="#C2410C"></path></svg></span><span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 19px">Lombalgie, hernie discale</span><span style="font-size: 15px; color: #55645F; line-height: 1.5">Douleurs du bas du dos, aiguës ou chroniques.</span></div>
+<div style="background: #F5F6F3; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 14px"><span style="width: 64px; height: 64px; border-radius: 18px; background: #E3EEEA; display: flex; align-items: center; justify-content: center"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#2C5F59" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="6" r="3.5"></circle><path d="M10.5 9.5v2.5M13.5 9.5v2.5M3.5 21c0-4.5 3.8-8 8.5-8s8.5 3.5 8.5 8"></path><path d="M16.5 10l2.5-1.5M7.5 10L5 8.5" stroke="#C2410C"></path></svg></span><span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 19px">Nuque, épaules, cervicales</span><span style="font-size: 15px; color: #55645F; line-height: 1.5">Tensions, raideurs, torticolis.</span></div>
+<div style="background: #F5F6F3; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 14px"><span style="width: 64px; height: 64px; border-radius: 18px; background: #E3EEEA; display: flex; align-items: center; justify-content: center"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#2C5F59" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 21v-3.5A7.5 7.5 0 1 1 18.5 11l1.5 3h-2v3a2 2 0 0 1-2 2h-2v2"></path><path d="M12 6.5l-2 3h3l-2 3" stroke="#C2410C"></path></svg></span><span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 19px">Migraines, vertiges</span><span style="font-size: 15px; color: #55645F; line-height: 1.5">Maux de tête liés aux tensions.</span></div>
+<div style="background: #F5F6F3; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 14px"><span style="width: 64px; height: 64px; border-radius: 18px; background: #E3EEEA; display: flex; align-items: center; justify-content: center"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#2C5F59" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v8c0 2.5 1.5 4 1.5 6.5V22h4M14 2v8.5c0 2-.5 3.5-.5 5"></path><path d="M17.5 9l-2 3.5h3l-2 3.5" stroke="#C2410C"></path></svg></span><span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 19px">Sciatique, névralgies</span><span style="font-size: 15px; color: #55645F; line-height: 1.5">Douleurs qui descendent dans la jambe ou le bras.</span></div>
+<div style="background: #F5F6F3; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 14px"><span style="width: 64px; height: 64px; border-radius: 18px; background: #E3EEEA; display: flex; align-items: center; justify-content: center"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#2C5F59" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 3l5.5 7M20 21l-5.5-7"></path><circle cx="12" cy="12" r="3"></circle><path d="M17 7l1.5-1.5M7 17l-1.5 1.5" stroke="#C2410C"></path></svg></span><span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 19px">Tendinites, arthrose</span><span style="font-size: 15px; color: #55645F; line-height: 1.5">Canal carpien, articulations douloureuses.</span></div>
+<div style="background: #F5F6F3; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 14px"><span style="width: 64px; height: 64px; border-radius: 18px; background: #E3EEEA; display: flex; align-items: center; justify-content: center"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#2C5F59" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13.5A8.5 8.5 0 1 1 10.5 4a6.5 6.5 0 0 0 9.5 9.5z"></path><path d="M15 3h3.5L15 6.5h3.5"></path></svg></span><span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 19px">Sommeil, stress, digestion</span><span style="font-size: 15px; color: #55645F; line-height: 1.5">Troubles fonctionnels du quotidien.</span></div>
+</div>
+<span class="swipe-hint" style="align-items: center; gap: 8px; font-size: 13px; color: #55645F; margin-top: -16px">Faites glisser pour voir la suite <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+<div style="display: flex; flex-wrap: wrap; gap: 10px">
+<span style="background: #E3EEEA; color: #24504B; padding: 10px 16px; border-radius: 999px; font-size: 15px; font-weight: 500">Bébés &amp; enfants</span>
+<span style="background: #E3EEEA; color: #24504B; padding: 10px 16px; border-radius: 999px; font-size: 15px; font-weight: 500">Adultes</span>
+<span style="background: #E3EEEA; color: #24504B; padding: 10px 16px; border-radius: 999px; font-size: 15px; font-weight: 500">Femmes enceintes</span>
+<span style="background: #E3EEEA; color: #24504B; padding: 10px 16px; border-radius: 999px; font-size: 15px; font-weight: 500">Sportifs</span>
+<span style="background: #E3EEEA; color: #24504B; padding: 10px 16px; border-radius: 999px; font-size: 15px; font-weight: 500">Seniors</span>
+</div>
+</div>
+</section>
+
+<section id="seance" style="max-width: 1200px; margin: 0 auto; padding: clamp(48px, 7vw, 80px) clamp(16px, 4vw, 32px); display: flex; flex-direction: column; gap: 32px">
+<h2 style="margin: 0; font-family: Manrope, sans-serif; font-size: clamp(26px, 4vw, 38px); font-weight: 800; letter-spacing: -0.01em">Comment se déroule votre prise en charge ?</h2>
+<div class="cards stack" style="--cols: 3">
+<div style="background: #FFFFFF; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 12px"><span style="width: 44px; height: 44px; border-radius: 999px; background: #2C5F59; color: #FFFFFF; font-weight: 700; display: flex; align-items: center; justify-content: center">1</span><span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 20px">Premier rendez-vous · 1h</span><span style="font-size: 15px; line-height: 1.6; color: #55645F">Bilan complet : antécédents, posture, examen orthopédique et neurologique. Apportez vos examens si vous en avez.</span></div>
+<div style="background: #FFFFFF; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 12px"><span style="width: 44px; height: 44px; border-radius: 999px; background: #2C5F59; color: #FFFFFF; font-weight: 700; display: flex; align-items: center; justify-content: center">2</span><span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 20px">Séances de soin · 20 min</span><span style="font-size: 15px; line-height: 1.6; color: #55645F">Des séances rapprochées au début pour diminuer vos symptômes, puis espacées. Exercices et conseils à la clé.</span></div>
+<div style="background: #FFFFFF; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 12px"><span style="width: 44px; height: 44px; border-radius: 999px; background: #2C5F59; color: #FFFFFF; font-weight: 700; display: flex; align-items: center; justify-content: center">3</span><span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 20px">Suivi dans le temps</span><span style="font-size: 15px; line-height: 1.6; color: #55645F">Un bilan pour mesurer les progrès, puis un suivi ponctuel pour garder les bénéfices et prévenir les rechutes.</span></div>
+</div>
+</section>
+
+<section id="exercices" style="background: #E9F0EC; overflow: hidden">
+<div style="max-width: 1200px; margin: 0 auto; padding: clamp(48px, 7vw, 80px) clamp(16px, 4vw, 32px); display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 640px">
+<span style="align-self: flex-start; background: #FFFFFF; color: #24504B; padding: 7px 14px; border-radius: 999px; font-size: 14px; font-weight: 600">Entre deux séances</span>
+<h2 style="margin: 0; font-family: Manrope, sans-serif; font-size: clamp(26px, 4vw, 38px); font-weight: 800; letter-spacing: -0.01em">Exercices pour soulager au quotidien</h2>
+<p style="margin: 0; font-size: clamp(16px, 2vw, 18px); line-height: 1.6; color: #43524E">Quelques mouvements simples, conseillés par vos chiropracteurs, à faire chez vous en douceur.</p>
+</div>
+<div class="cards carousel" style="--cols: 4">
+<div style="background: #FFFFFF; border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 12px">
+<div style="height: 120px; border-radius: 14px; background: #F5F6F3; display: flex; align-items: center; justify-content: center"><svg width="120" height="80" viewBox="0 0 120 80" fill="none" stroke="#2C5F59" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="30" r="7"></circle><path d="M32 34c12-14 40-14 56 0"></path><path d="M36 38v28M86 36v30M30 38l-4 28"></path><path d="M10 68h100" stroke="#C9D3CF"></path><path d="M60 16v-8M54 12l6-6 6 6" stroke="#C2410C" stroke-width="2.5"></path></svg></div>
+<div style="display: flex; justify-content: space-between; align-items: center"><span style="font-size: 13px; font-weight: 600; color: #2C5F59">Dos</span><span style="font-size: 13px; color: #55645F">10 répétitions</span></div>
+<span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 18px">Le chat et la vache</span>
+<span style="font-size: 14px; line-height: 1.6; color: #55645F">À quatre pattes, arrondissez le dos en expirant, puis creusez-le doucement en inspirant.</span>
+</div>
+<div style="background: #FFFFFF; border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 12px">
+<div style="height: 120px; border-radius: 14px; background: #F5F6F3; display: flex; align-items: center; justify-content: center"><svg width="120" height="90" viewBox="0 0 120 90" fill="none" stroke="#2C5F59" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="52" cy="22" r="10"></circle><path d="M58 31l2 10M30 84c0-20 12-38 30-38s30 18 30 38"></path><path d="M40 12c-6 4-8 10-7 16" stroke="#C2410C" stroke-width="2.5"></path><path d="M30 26l3 3 4-3" stroke="#C2410C" stroke-width="2.5"></path></svg></div>
+<div style="display: flex; justify-content: space-between; align-items: center"><span style="font-size: 13px; font-weight: 600; color: #2C5F59">Nuque</span><span style="font-size: 13px; color: #55645F">20 s par côté</span></div>
+<span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 18px">Étirement de la nuque</span>
+<span style="font-size: 14px; line-height: 1.6; color: #55645F">Assis, épaules relâchées, inclinez lentement la tête vers l'épaule sans forcer.</span>
+</div>
+<div style="background: #FFFFFF; border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 12px">
+<div style="height: 120px; border-radius: 14px; background: #F5F6F3; display: flex; align-items: center; justify-content: center"><svg width="120" height="80" viewBox="0 0 120 80" fill="none" stroke="#2C5F59" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="20" cy="54" r="7"></circle><path d="M28 58h34"></path><path d="M62 58l-10-22 22 4-12 18"></path><path d="M44 58l6-16"></path><path d="M10 68h100" stroke="#C9D3CF"></path><path d="M84 30l-8 6 4-10" stroke="#C2410C" stroke-width="2.5"></path></svg></div>
+<div style="display: flex; justify-content: space-between; align-items: center"><span style="font-size: 13px; font-weight: 600; color: #2C5F59">Lombaires</span><span style="font-size: 13px; color: #55645F">30 s · 3 fois</span></div>
+<span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 18px">Genoux contre la poitrine</span>
+<span style="font-size: 14px; line-height: 1.6; color: #55645F">Allongé sur le dos, ramenez les genoux vers vous et respirez calmement.</span>
+</div>
+<div style="background: #FFFFFF; border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 12px">
+<div style="height: 120px; border-radius: 14px; background: #F5F6F3; display: flex; align-items: center; justify-content: center"><svg width="120" height="90" viewBox="0 0 120 90" fill="none" stroke="#2C5F59" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="60" cy="18" r="9"></circle><path d="M60 28v34M60 62l-12 22M60 62l12 22"></path><path d="M60 38l-26-8M60 38l26-8"></path><path d="M28 22l-6 6M92 22l6 6" stroke="#C2410C" stroke-width="2.5"></path></svg></div>
+<div style="display: flex; justify-content: space-between; align-items: center"><span style="font-size: 13px; font-weight: 600; color: #2C5F59">Épaules</span><span style="font-size: 13px; color: #55645F">10 répétitions</span></div>
+<span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 18px">Ouverture des épaules</span>
+<span style="font-size: 14px; line-height: 1.6; color: #55645F">Debout, ouvrez les bras en arrière en rapprochant les omoplates, puis relâchez.</span>
+</div>
+</div>
+<span class="swipe-hint" style="align-items: center; gap: 8px; font-size: 13px; color: #43524E; margin-top: -16px">Faites glisser pour voir la suite <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+<div style="background: #FFFFFF; border-radius: 16px; padding: 18px 20px; display: flex; gap: 14px; align-items: flex-start">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C2410C" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 1px"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v5M12 16.5h.01"></path></svg>
+<span style="font-size: 15px; line-height: 1.6; color: #43524E">Ces exercices ne remplacent pas une consultation. Bougez sans forcer et arrêtez en cas de douleur. Demandez conseil à votre chiropracteur pour un programme adapté.</span>
+</div>
+</div>
+</section>
+
+<section id="equipe" style="background: #FFFFFF">
+<div style="max-width: 1200px; margin: 0 auto; padding: clamp(48px, 7vw, 80px) clamp(16px, 4vw, 32px); display: flex; flex-direction: column; gap: 32px">
+<h2 style="margin: 0; font-family: Manrope, sans-serif; font-size: clamp(26px, 4vw, 38px); font-weight: 800; letter-spacing: -0.01em">Vos chiropracteurs</h2>
+<div class="cards stack" style="--cols: 2">
+<div style="background: #F5F6F3; border-radius: 22px; padding: 24px; display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap">
+<div style="flex: none; width: 110px; height: 130px; border-radius: 16px; background: #DCE5E1; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #43524E; text-align: center">[Photo Sophie]</div>
+<div style="flex: 1 1 180px; display: flex; flex-direction: column; gap: 8px"><span style="font-family: Manrope, sans-serif; font-weight: 800; font-size: 21px">Sophie Lauzzana</span><span style="font-size: 14px; font-weight: 600; color: #2C5F59">Diplômée de l'IFEC</span><span style="font-size: 15px; line-height: 1.6; color: #43524E">Une vocation née dès l'adolescence, une pratique fondée sur l'écoute, l'honnêteté et une prise en compte globale de chaque patient.</span></div>
+</div>
+<div style="background: #F5F6F3; border-radius: 22px; padding: 24px; display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap">
+<div style="flex: none; width: 110px; height: 130px; border-radius: 16px; background: #DCE5E1; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #43524E; text-align: center">[Photo Audrey]</div>
+<div style="flex: 1 1 180px; display: flex; flex-direction: column; gap: 8px"><span style="font-family: Manrope, sans-serif; font-weight: 800; font-size: 21px">Audrey Chesnais</span><span style="font-size: 14px; font-weight: 600; color: #2C5F59">Diplômée de l'IFEC Toulouse</span><span style="font-size: 15px; line-height: 1.6; color: #43524E">Un accompagnement personnalisé et global, qui prend en compte les dimensions physiques, émotionnelles et nutritionnelles.</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section style="overflow: hidden">
+<div style="max-width: 1200px; margin: 0 auto; padding: clamp(48px, 7vw, 80px) clamp(16px, 4vw, 32px); display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 12px">
+<h2 style="margin: 0; font-family: Manrope, sans-serif; font-size: clamp(26px, 4vw, 38px); font-weight: 800; letter-spacing: -0.01em">Ce que disent nos patients</h2>
+<a href="#" style="font-weight: 600; font-size: 15px">Voir tous les avis Google</a>
+</div>
+<div class="cards carousel" style="--cols: 3">
+<div style="background: #FFFFFF; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 14px"><span role="img" style="color: #B7791F; font-size: 18px; letter-spacing: 2px" aria-label="5 étoiles sur 5">★★★★★</span><span style="font-size: 16px; line-height: 1.6; color: #43524E">[Extrait d'un vrai avis Google, avec accord du cabinet]</span><span style="font-size: 14px; font-weight: 600">[Prénom, initiale]</span></div>
+<div style="background: #FFFFFF; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 14px"><span role="img" style="color: #B7791F; font-size: 18px; letter-spacing: 2px" aria-label="5 étoiles sur 5">★★★★★</span><span style="font-size: 16px; line-height: 1.6; color: #43524E">[Extrait d'un vrai avis Google, avec accord du cabinet]</span><span style="font-size: 14px; font-weight: 600">[Prénom, initiale]</span></div>
+<div style="background: #FFFFFF; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 14px"><span role="img" style="color: #B7791F; font-size: 18px; letter-spacing: 2px" aria-label="5 étoiles sur 5">★★★★★</span><span style="font-size: 16px; line-height: 1.6; color: #43524E">[Extrait d'un vrai avis Google, avec accord du cabinet]</span><span style="font-size: 14px; font-weight: 600">[Prénom, initiale]</span></div>
+</div>
+</div>
+</section>
+
+<section id="infos" style="background: #FFFFFF">
+<div class="cards stack" style="--cols: 3; max-width: 1200px; margin: 0 auto; padding: clamp(48px, 7vw, 80px) clamp(16px, 4vw, 32px); gap: 20px; box-sizing: border-box">
+<div style="background: #F5F6F3; border-radius: 22px; padding: 24px; display: flex; flex-direction: column; gap: 14px">
+<h3 style="margin: 0; font-family: Manrope, sans-serif; font-size: 22px; font-weight: 800">Tarifs</h3>
+<div style="display: flex; justify-content: space-between; font-size: 16px; border-bottom: 1px solid #DCE2DE; padding-bottom: 12px"><span>Adulte</span><span style="font-weight: 700">60 €</span></div>
+<div style="display: flex; justify-content: space-between; font-size: 16px; border-bottom: 1px solid #DCE2DE; padding-bottom: 12px"><span>Enfant</span><span style="font-weight: 700">45 €</span></div>
+<span style="font-size: 14px; line-height: 1.6; color: #55645F">Paiement : espèces, chèque [carte bancaire ?]. De nombreuses mutuelles remboursent les séances.</span>
+<a href="#" style="font-weight: 600; font-size: 15px">Liste des mutuelles (PDF)</a>
+</div>
+<div style="background: #F5F6F3; border-radius: 22px; padding: 24px; display: flex; flex-direction: column; gap: 14px">
+<h3 style="margin: 0; font-family: Manrope, sans-serif; font-size: 22px; font-weight: 800">Venir au cabinet</h3>
+<span style="font-size: 16px; line-height: 1.6">1 boulevard du Président Roosevelt<br>68200 Mulhouse</span>
+<span style="font-size: 14px; line-height: 1.7; color: #55645F">Tram 2, 3 et tram-train : Porte Haute<br>Bus 11 et 16 : Canal Couvert<br>Parkings municipaux en face · Accès PMR</span>
+<a href="#" style="font-weight: 600; font-size: 15px">Calculer mon itinéraire</a>
+</div>
+<div style="background: #F5F6F3; border-radius: 22px; padding: 24px; display: flex; flex-direction: column; gap: 14px">
+<h3 style="margin: 0; font-family: Manrope, sans-serif; font-size: 22px; font-weight: 800">Une question ?</h3>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">Nom<input type="text" placeholder="Votre nom" style="font: inherit; font-size: 16px; font-weight: 400; padding: 12px 14px; border-radius: 12px; border: 1.5px solid #C9D3CF; background: #FFFFFF"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">E-mail<input type="email" placeholder="vous@exemple.fr" style="font: inherit; font-size: 16px; font-weight: 400; padding: 12px 14px; border-radius: 12px; border: 1.5px solid #C9D3CF; background: #FFFFFF"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">Message<textarea rows="3" placeholder="Votre question…" style="font: inherit; font-size: 16px; font-weight: 400; padding: 12px 14px; border-radius: 12px; border: 1.5px solid #C9D3CF; background: #FFFFFF; resize: vertical"></textarea></label>
+<button type="button" style="font: inherit; font-weight: 600; border: none; background: #2C5F59; color: #FFFFFF; padding: 14px; border-radius: 12px; cursor: pointer">Envoyer</button>
+<span style="font-size: 12px; line-height: 1.5; color: #55645F">Vos données servent uniquement à vous répondre et sont supprimées après [durée]. <a href="#">En savoir plus</a></span>
+</div>
+</div>
+</section>
+
+<footer style="background: #1B2B29; color: #E6ECE9">
+<div style="max-width: 1200px; margin: 0 auto; padding: 36px clamp(16px, 4vw, 32px); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; font-size: 14px">
+<span>© 2026 Chiropraxie Mulhouse · Sophie Lauzzana &amp; Audrey Chesnais</span>
+<span style="display: flex; gap: 24px"><a href="#" style="color: #E6ECE9">Mentions légales</a><a href="#" style="color: #E6ECE9">Confidentialité</a></span>
+</div>
+</footer>
+
+<div class="mbar" style="position: sticky; bottom: 0; z-index: 5; background: #FFFFFF; border-top: 1px solid #E3E7E2; padding: 10px 16px; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; box-shadow: 0 -6px 20px rgba(27,43,41,0.06)">
+<a href="tel:+33389322700" style="text-decoration: none; text-align: center; padding: 14px; border-radius: 12px; border: 1.5px solid #C9D3CF; color: #1B2B29; font-weight: 600">Appeler</a>
+<a href="#rdv" style="text-decoration: none; text-align: center; padding: 14px; border-radius: 12px; background: #2C5F59; color: #FFFFFF; font-weight: 600">Rendez-vous</a>
+</div>
+</div>
+<script>
+document.querySelectorAll('.opt-type,.opt-pro').forEach(function(b){b.addEventListener('click',function(){var c=b.classList.contains('opt-type')?'.opt-type':'.opt-pro';document.querySelectorAll(c).forEach(function(x){x.classList.remove('on');x.setAttribute('aria-pressed','false')});b.classList.add('on');b.setAttribute('aria-pressed','true')})});
+var bg=document.getElementById('burger'),mn=document.getElementById('mnav');
+function setM(o){mn.hidden=!o;bg.setAttribute('aria-expanded',o?'true':'false');bg.setAttribute('aria-label',o?'Fermer le menu':'Ouvrir le menu')}
+bg.addEventListener('click',function(){setM(mn.hidden)});
+mn.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){setM(false)})});
+</script>
+</body>
+</html>
